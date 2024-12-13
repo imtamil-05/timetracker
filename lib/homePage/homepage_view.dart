@@ -86,16 +86,16 @@ class HomepageViewState extends State<HomepageView> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                      Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         const CircleAvatar(
                           
                           radius: 23,
-                          backgroundImage: AssetImage('assets/images/peoples.jpeg',),
+                          backgroundImage: AssetImage('assets/images/people.jpeg',),
                           backgroundColor: Colors.black,
                         ),
-                        SizedBox(width: 5,),
+                      
                         const Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -210,7 +210,7 @@ class HomepageViewState extends State<HomepageView> {
       body: Center(
         
         child:Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(18.0),
           child: Column(
                 
             mainAxisAlignment: MainAxisAlignment.start,
@@ -221,10 +221,10 @@ class HomepageViewState extends State<HomepageView> {
                  color: Colors.black,
                 child: ListTile(
                   title: Text('Hi Rishi!!',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white),),
-                  subtitle: Text('Good Morning!',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.grey),),
+                  subtitle: Text('Good Morning!',style: TextStyle(fontSize: 15,color: Colors.grey),),
                   trailing: CircleAvatar(
-                    radius: 40,
-                    backgroundImage: AssetImage('assets/images/peoples.jpeg'),
+                    radius: 20,
+                    backgroundImage: AssetImage('assets/images/people.jpeg'),
                     backgroundColor: Colors.transparent,
                   ),
                 )
